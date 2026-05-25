@@ -113,8 +113,8 @@ export function Hero() {
 
             {/* floating tech badges */}
             <div className="hidden md:flex absolute -right-6 top-4 flex-col gap-2.5">
-              {techs.map(({ Icon, label, color }) => (
-                <div key={label} className="glass rounded-xl pl-2 pr-3 py-2 flex items-center gap-2 text-xs animate-float" style={{ animationDelay: `${Math.random() * 2}s` }}>
+              {techs.map(({ Icon, label, color }, idx) => (
+                <div key={label} className="glass rounded-xl pl-2 pr-3 py-2 flex items-center gap-2 text-xs animate-float" style={{ animationDelay: `${(idx * 0.3) % 2}s` }}>
                   <Icon className={`h-5 w-5 ${color}`} />
                   <span className="font-medium">{label}</span>
                 </div>
