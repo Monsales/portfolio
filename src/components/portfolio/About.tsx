@@ -1,6 +1,7 @@
 import { User, Mail, Phone, MapPin, CheckCircle2, Sparkles, Eye, Zap, Users } from "lucide-react";
 import about from "@/assets/about-portrait.jpg";
 
+
 const info = [
   { Icon: User, label: "Name", value: "Ji Monsales" },
   { Icon: Mail, label: "Email", value: "ji.monsales@email.com" },
