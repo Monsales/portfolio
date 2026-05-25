@@ -22,4 +22,4 @@ jobs:
         with:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: pages deploy dist/server --project-name=portfolio
+          command: pages deploy dist --project-name=portfolio
